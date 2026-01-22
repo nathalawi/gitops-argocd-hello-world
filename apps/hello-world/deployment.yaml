@@ -12,6 +12,7 @@ spec:
       labels:
         app: hello-world-app
     spec:
+      replicas: 3
       containers:
         - name: hello-world-app
           image: docker.io/kicbase/echo-server:1.0

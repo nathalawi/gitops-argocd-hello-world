@@ -4,6 +4,7 @@ metadata:
   name: hello-world-app
   namespace: default
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: hello-world-app
@@ -12,7 +13,6 @@ spec:
       labels:
         app: hello-world-app
     spec:
-      replicas: 3
       containers:
         - name: hello-world-app
           image: docker.io/kicbase/echo-server:1.0

@@ -1,3 +1,6 @@
+![GitOps](https://img.shields.io/badge/GitOps-ArgoCD-blue)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Ready-blue)
+
 # GitOps Live Demo – Kubernetes with Argo CD
 
 This repository contains the **live demo** used in the **TechTalk With Nathan** GitOps video.

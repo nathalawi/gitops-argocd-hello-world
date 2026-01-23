@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-world-app
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts: 
+    - hello-world.example.com
+    secretName: wildcard-example-local-tls
+  rules:
+  - host: hello-world.example.com
+    http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: hello-world-app
+              port:
+                number: 80

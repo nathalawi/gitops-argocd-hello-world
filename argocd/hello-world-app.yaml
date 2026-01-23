@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/nathalawi/gitops-argocd-hello-world.git
-    targetRevision: main
+    targetRevision: gitops-ingress-cert-manager
     path: apps/hello-world
     kustomize: {} 
   destination:
